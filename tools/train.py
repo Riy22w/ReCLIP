@@ -18,7 +18,7 @@ import torch.multiprocessing as mp
 import sys
 
 import os
-
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from config.configs import cfg_from_file
 from model.model import RECLIPPP, ReCLIP
